@@ -43,7 +43,7 @@ namespace ConsoleApp2
             timer.Start();
             timer.Elapsed += (s, e) =>
             {
-                    foreach (Process processes in Process.GetProcessesByName("ThPanel"))
+                    foreach (Process processes in Process.GetProcessesByName(nameProc))
                     {
                         processes.Kill();
      
